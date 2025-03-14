@@ -39,5 +39,3 @@ if another_item == 'Yes':
 else: 
     print(f'Okey! Enjoy our item!')
     print(f'Your bill is {total_order}')
-
-
