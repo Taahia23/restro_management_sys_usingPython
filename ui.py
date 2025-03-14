@@ -10,3 +10,23 @@ menu = {
     'Coffee': 40,
 }
 
+# Function to calculate total
+def calculate_total():
+    total = 0
+    selected_items = []
+    
+    for item in menu:
+        if checkboxes[item].get() == 1:
+            total += menu[item]
+            selected_items.append(item)
+    
+    if not selected_items:
+        messagebox.showwarning("No Selection", "Please select at least one item.")
+        return
+    
+    another_order = messagebox.askyesno("Order More", "Do you want to order another item?")
+    if another_order:
+        return
+    
+    messagebox.showinfo("Order Summary", f"You ordered: {', '.join(selected_items)}\nTotal: {total} Tk\nEnjoy your meal!")
+
