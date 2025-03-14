@@ -30,3 +30,8 @@ def calculate_total():
     
     messagebox.showinfo("Order Summary", f"You ordered: {', '.join(selected_items)}\nTotal: {total} Tk\nEnjoy your meal!")
 
+# Creating main window
+root = tk.Tk()
+root.title("Restaurant Order System")
+root.geometry("350x350")
+
