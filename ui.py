@@ -35,3 +35,9 @@ root = tk.Tk()
 root.title("Restaurant Order System")
 root.geometry("350x350")
 
+# Heading Label
+tk.Label(root, text="Welcome to Our Restaurant", font=("Arial", 14)).pack(pady=10)
+
+# Dictionary to store checkbox variables
+checkboxes = {}
+
