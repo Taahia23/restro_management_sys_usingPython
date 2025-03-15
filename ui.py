@@ -41,3 +41,11 @@ tk.Label(root, text="Welcome to Our Restaurant", font=("Arial", 14)).pack(pady=1
 # Dictionary to store checkbox variables
 checkboxes = {}
 
+# Creating checkboxes for each menu item
+for item in menu:
+    var = tk.IntVar()
+    checkboxes[item] = var
+    tk.Checkbutton(root, text=f"{item} - {menu[item]} Tk", variable=var).pack(anchor='w')
+
+
+
