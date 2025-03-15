@@ -52,3 +52,5 @@ for item in menu:
 tk.Button(root, text="Place Order", command=calculate_total, font=("Arial", 12, "bold"), bg="green", fg="white").pack(pady=10)
 
 
+# Run the Tkinter event loop
+root.mainloop()
