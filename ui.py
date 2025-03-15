@@ -48,4 +48,7 @@ for item in menu:
     tk.Checkbutton(root, text=f"{item} - {menu[item]} Tk", variable=var).pack(anchor='w')
 
 
+# Order Button
+tk.Button(root, text="Place Order", command=calculate_total, font=("Arial", 12, "bold"), bg="green", fg="white").pack(pady=10)
+
 
